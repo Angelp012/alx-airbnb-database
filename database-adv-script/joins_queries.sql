@@ -1,12 +1,7 @@
 --LEFT JOIN
-SELECT 
-    Property.property_id,
-    Property.name,
-    Review.rating,
-    Review.comment
-FROM Property
-LEFT JOIN Review ON Property.property_id = Review.property_id;
-
+SELECT * FROM Property
+LEFT JOIN Review
+ON Property.property_id = Review.property_id;
 --INNER JOIN
 SELECT 
     Booking.booking_id,
