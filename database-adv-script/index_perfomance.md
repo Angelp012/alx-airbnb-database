@@ -1,5 +1,13 @@
-Query execution time reduced by 60-80% for common search operations
+# Index Performance – Airbnb Clone Database
 
-JOIN operations on indexed columns showed 3-5x speed improvement
+This file documents the use of SQL indexes to improve performance for high-usage queries.
 
-COUNT operations with GROUP BY improved by 4x****
+---
+
+## 🎯 Why Indexes?
+
+Indexes help optimize queries involving large datasets by allowing faster lookups, especially on columns frequently used in:
+
+- `JOIN` conditions
+- `WHERE` filters
+- `ORDER BY` clauses
